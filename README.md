@@ -1,6 +1,6 @@
 # JAVASCRIPT CORE CONCEPTS
 
-This contains javascript concept i came across and leart during my journey of learning javascript
+This contains JavaScript concepts i came across and learnt during my journey of learning JavaScript
 - datatype
 - variables
 - operator

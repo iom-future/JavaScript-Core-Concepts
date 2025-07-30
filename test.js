@@ -1,62 +1,26 @@
-//a string is an array
-let nickName = `iom`;
-let lastName ="      MOSES ";
-//string concatenation
-//meth 1
-//let fullName = nickName + lastName;
-//console.log(fullName);
+// function showCalBackFunc(callBackFunc){
+//   console.log(callBackFunc(3,4));
+// }
+//
+// function cb(a,b){
+//   return a + b;
+// }
+// showCalBackFunc(cb);
 
-//meth 2 - concat method
-//let fullName = nickName.concat(lastName);
-//console.log(fullName);
+//using a call back function
+//you run(call) the call back function in the main function even before declaring it,but it has to have a parameter(name) in the main func
+//in this case callBackFunc is the parameter(name) for the call back function
+//in this case showCalBackFunc is the main function
+function showCalBackFunc(callBackFunc){
+  //where you call a function is where/when you pass the arguments
+  //running call back func even before declaration
+   console.log(callBackFunc(4,5));
+ }
 
-//meth 3 - append
-// nickName += lastName;
-// console.log(nickName)
-
-//meth 4 - back tick string ``
-// let fullName = `${nickName} ${lastName}`;
-// console.log(fullName);
-//
-//
-// //length
-// //spaces are counted also
-// console.log(nickName.length);
-//
-// //cases
-// console.log(nickName.toUpperCase());
-// console.log(lastName.toLowerCase());
-//
-// //slice
-// console.log(nickName.slice(0,3));
-//
-// //split and join
-// console.log(nickName.split(""));
-// //console.log(lastName.join());
-//
-// //includes
-// console.log(nickName.includes("r"));
-//
-// //trim
-// console.log(lastName);
-// console.log(lastName.trim());
-
-//TYPE CONVERSION
-//convert string to number
-let age = "16";
-console.log(age);
-console.log(typeof age);
-//meth 1
-// age = parseInt(age);
-// console.log(age);
-// console.log(typeof age);
-
-//meth 2
-// age = +age;
-// console.log(age);
-// console.log(typeof age);
-
-//meth 3
-age = Number(age);
-console.log(age);
-console.log(typeof age);
+ //calling the main function
+//this is where you can declare your callback function
+// and pass it as an arguments to your main func, hence the name call back func
+//using this method of writing call back func, when declaring the call back func  it can be anonymous(nameless)
+ showCalBackFunc(function(a,b){
+   return a + b;
+})

@@ -3,10 +3,11 @@ const dog ={
   name:"sky,",
   breed : "golden retrival",
   age: 2,
+  10:"ten",
   bark(){
     console.log("woof! woof!!");
   },
-  eat: function(){
+  eat: function (){
     console.log("chomp");
   }
 }
@@ -14,7 +15,7 @@ const dog ={
 delete dog.age;
 dog.favouriteHuman = "isaac";
 dog["colour"] = "black and brown";
-console.log(dog);
+console.log(dog[10]);
 
 
 //FACTORY FUNCTION

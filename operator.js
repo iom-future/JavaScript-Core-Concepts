@@ -93,14 +93,14 @@ truthy value(if any is found), and if none is found
 //console.log(compare);
 
 //real life application
-let signinAsGuestName =" user212238";
+let signinAsGuestName = ' user212238';
 let inputtedUsername = '';
-let displayedUsername = inputtedUsername||signinAsGuestName;
+let displayedUsername = inputtedUsername || signinAsGuestName;
 console.log(displayedUsername);
 
 
 //ARITHMETIC PRECEDENCE
 //BODMAS
-let result = 2 + 2/2 * 2 -2**2;
+let result = 2 + 2 / 2 * 2 - 2 ** 2;
 console.log(result);
 

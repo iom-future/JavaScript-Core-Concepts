@@ -75,10 +75,9 @@ let notResult = !false;
 //logically: if it's NOT false, then its truthy(evaluate to true)
 
 //NULL COALESCING LO
-/*let a =0
-;
-let nulResult = a ?? "happy";
-console.log(nulResult)*/
+let a =0;
+let nullResult = a ?? "happy";
+console.log(nullResult);
 
 //LO WITH NON-BOOLEAN VALUE
 
@@ -93,7 +92,7 @@ truthy value(if any is found), and if none is found
 //console.log(compare);
 
 //real life application
-let signinAsGuestName = ' user212238';
+let signinAsGuestName = 'user212238';
 let inputtedUsername = '';
 let displayedUsername = inputtedUsername || signinAsGuestName;
 console.log(displayedUsername);

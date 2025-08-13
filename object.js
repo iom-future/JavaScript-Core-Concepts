@@ -1,11 +1,10 @@
-//what are property within object
 const dog ={
   name:"sky,",
-  breed : "golden retrival",
+  breed : "golden retrieval",
   age: 2,
   10:"ten",
   bark(){
-    console.log("woof! woof!!");
+    return "woof! woof!!";
   },
   eat: function (){
     console.log("chomp");
@@ -15,7 +14,39 @@ const dog ={
 delete dog.age;
 dog.favouriteHuman = "isaac";
 dog["colour"] = "black and brown";
-console.log(dog[10]);
+console.log(dog.bark);
+
+
+
+//METHOD
+//a function inside an object
+
+//Creating a METHOD , method 1 - external(global) method
+/*function sum(a,b){
+    return a+ b;
+}
+const array = {
+    0:3,
+    1:5,
+    sum
+}
+let result= array.sum(array[0],array[1]);
+console.log(result);*/
+
+//Creating a METHOD , method 2 - internal(local) method
+function sum(a,b){
+    return a+ b;
+}
+const array = {
+    0:3,
+    1:5,
+    sum:function(a,b){
+        return a+b;
+    }
+}
+let result= array.sum(array[0],array[1]);
+console.log(result);
+
 
 
 //FACTORY FUNCTION

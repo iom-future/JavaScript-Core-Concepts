@@ -8,6 +8,7 @@
 //   return a + b;
 // }
 //you pass a reference of it as an argument in the main function
+//NOTE:you dont call it with () you pass its name(reference) only
 // showCalBackFunc(cb);
 
 //SECOND METHOD OF EXECUTING A CALLBACK FUNCTION

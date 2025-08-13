@@ -18,7 +18,8 @@ message('isaac');
 const welcomeMessage = function (name) {
     console.log(`welcome to write.ai ${name}`);
 };
-welcomeMessage('moses');
+
+
 
 //THE DIFF BTW FUNC DECL AND FUNC EXPRESS is
 //you can call a function before declaring it but

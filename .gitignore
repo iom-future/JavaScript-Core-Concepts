@@ -29,3 +29,4 @@ package-lock.json
 package.json
 tsconfig.json
 index.html
+template-literal.js

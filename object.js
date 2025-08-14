@@ -14,8 +14,8 @@ const dog ={
 delete dog.age;
 dog.favouriteHuman = "isaac";
 dog["colour"] = "black and brown";
-console.log(dog.bark);
-
+console.log(dog.bark());
+dog.eat()
 
 
 //METHOD
@@ -34,9 +34,7 @@ let result= array.sum(array[0],array[1]);
 console.log(result);*/
 
 //Creating a METHOD , method 2 - internal(local) method
-function sum(a,b){
-    return a+ b;
-}
+
 const array = {
     0:3,
     1:5,
@@ -44,7 +42,7 @@ const array = {
         return a+b;
     }
 }
-let result= array.sum(array[0],array[1]);
+let result= array.sum(3,6);
 console.log(result);
 
 

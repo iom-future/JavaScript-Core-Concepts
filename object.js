@@ -3,9 +3,11 @@ const dog ={
   breed : "golden retrieval",
   age: 2,
   10:"ten",
+  //enhanced object literal way of creating a method
   bark(){
     return "woof! woof!!";
   },
+  //traditional way of creating a method
   eat: function (){
     console.log("chomp");
   }
@@ -47,6 +49,22 @@ console.log(result);
 
 
 
+//ENHANCED OBJECT LITERALS-and easier way to define object property and method
+//if the key name is identical with the value variable name then use one [name]
+function userProfile(name,age,country){
+  return{
+    name, //--- name(key): name(param;value-variable-name)  without Enhanced Object Literal
+    age, //--- age(key): age(param)
+    country, //--- country(key): country(param)
+    intro(){
+      return `my name is ${name} i am from ${country}, and i am ${age} years old`;
+    } /* intro:function(){
+      return `my name is ${name} i am from ${country}, and i am ${age} years old`;
+    }*/
+  }
+}
+const user1 = userProfile("isaac",16,"Nigeria")
+console.log(user1);
 //FACTORY FUNCTION
 //used to avoid duplication of object codes;
 // write ones use anywhere

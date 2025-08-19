@@ -1,15 +1,15 @@
-//to work with date and time you use the date constructor or call it as a function
-//date constructor
+//To work with date and time you use the date constructor or call it as a function
+//DATE CONSTRUCTOR
 let date = new Date();
 console.log(date);
 
-//as a function(that receives Zero param
+//AS A FUNCTION(that receives Zero param)
 let date2 = Date();
 console.log(date2);
-/*to personalize the date you can pass in values in this format:
+
+/*To personalize the date you can pass in values in this format:
 * year,month,week,day,hours,minute,seconds,milliseconds
 * */
-
 let currentDate =new Date(2025,7,17,18,13);
 console.log(currentDate);
 
@@ -38,3 +38,7 @@ dateInDifferentFormat=changeDate.toLocaleDateString();//only date in the xx/x/xx
 console.log(dateInDifferentFormat);
 dateInDifferentFormat=changeDate.toLocaleString();//date and time ''''''
 console.log(dateInDifferentFormat)
+
+//SETTING DATE
+console.log(date.setDate(4))
+console.log(date.setUTCFullYear(7,6,8))

@@ -1,12 +1,13 @@
-//what are property within object
 const dog ={
   name:"sky,",
-  breed : "golden retrival",
+  breed : "golden retrieval",
   age: 2,
   10:"ten",
+  //enhanced object literal way of creating a method
   bark(){
-    console.log("woof! woof!!");
+    return "woof! woof!!";
   },
+  //traditional way of creating a method
   eat: function (){
     console.log("chomp");
   }
@@ -15,9 +16,55 @@ const dog ={
 delete dog.age;
 dog.favouriteHuman = "isaac";
 dog["colour"] = "black and brown";
-console.log(dog[10]);
+console.log(dog.bark());
+dog.eat()
 
 
+//METHOD
+//a function inside an object
+
+//Creating a METHOD , method 1 - external(global) method
+/*function sum(a,b){
+    return a+ b;
+}
+const array = {
+    0:3,
+    1:5,
+    sum
+}
+let result= array.sum(array[0],array[1]);
+console.log(result);*/
+
+//Creating a METHOD , method 2 - internal(local) method
+
+const array = {
+    0:3,
+    1:5,
+    sum:function(a,b){
+        return a+b;
+    }
+}
+let result= array.sum(3,6);
+console.log(result);
+
+
+
+//ENHANCED OBJECT LITERALS-and easier way to define object property and method
+//if the key name is identical with the value variable name then use one [name]
+function userProfile(name,age,country){
+  return{
+    name, //--- name(key): name(param;value-variable-name)  without Enhanced Object Literal
+    age, //--- age(key): age(param)
+    country, //--- country(key): country(param)
+    intro(){
+      return `my name is ${name} i am from ${country}, and i am ${age} years old`;
+    } /* intro:function(){
+      return `my name is ${name} i am from ${country}, and i am ${age} years old`;
+    }*/
+  }
+}
+const user1 = userProfile("isaac",16,"Nigeria")
+console.log(user1);
 //FACTORY FUNCTION
 //used to avoid duplication of object codes;
 // write ones use anywhere

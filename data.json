@@ -1,0 +1,9 @@
+{
+  "time": "12:30:13 pm",
+  "weather": "cloudy",
+  "advice": "stay in door",
+  "location": {
+    "country": "Nigeria",
+    "state": "Port Harcourt"
+  }
+}

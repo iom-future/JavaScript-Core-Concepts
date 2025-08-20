@@ -27,12 +27,16 @@ switch(studentID){
   case 4:
     console.log('asst head girl');
     break;
+  default :
+        console.log("other prefect or student");
 }*/
 
 
 //FOR LOOP
+//including: break and continue
 let numbers = [0, 1, 2, 3, 4, 5, 6, 7];
 let index;
+//using loops makes you obey 'DRY'
 /*
 console.log(numbers[index++]);
 console.log(numbers[index++]);

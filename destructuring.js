@@ -2,6 +2,7 @@
 * where destructuring comes in ,where you are able to split iterables into different elements then
 * store each element in it own variable*/
 
+//ARRAY DESTRUCTURING
 //create iterable
 const value = ['one','two','three']
 //destructure iterable
@@ -35,3 +36,22 @@ console.log(a,c,d);
 const[number1,...restOfNumber] = value;
 console.log(number1);
 console.log(restOfNumber);
+
+
+
+//OBJECT DESTRUCTURING
+//where the order doesnt matter but the name does matter unlike array destructuring
+
+const student={
+  studentName: 'isaac',
+  class: 'undergraduate',
+  age:17,
+  rollNumber:21
+
+}
+//putting a variable name in the {} that doesnt match a key gives you undefined-- '....the name does matter'
+const {rollNumber,age,studentName}=student; // putting {rollNum} (for rollNumber} gives undefines cause '....the name does matter'
+console.log(rollNumber,age);
+console.log(studentName);
+
+

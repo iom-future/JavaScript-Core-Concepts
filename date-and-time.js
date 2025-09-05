@@ -20,7 +20,7 @@ const onlyDate = date.getDate();//the day 1st - 31st
 const day = currentDate.getDay(); //day of the week : sunday(0)-saturday(6)
 const minutes = date.getMinutes();
 const milliseconds = date.getMilliseconds();
-console.log(milliseconds);
+console.log(month);
 
 //GETTING DIFFERENT TIME FORMAT
 console.log("DIFFERENT DATE FORMAT");
@@ -29,7 +29,7 @@ let dateInDifferentFormat = changeDate.toDateString();//date only in written for
 console.log(dateInDifferentFormat);
 //the dateObject.toString() does same thing as the Date() function
 dateInDifferentFormat=changeDate.toString();//data and time in written format
-console.log(dateInDifferentFormat);
+console.log(typeof dateInDifferentFormat);
 
 dateInDifferentFormat=changeDate.toISOString();//date and time in new Date() displayed format but in string form
 console.log(dateInDifferentFormat);

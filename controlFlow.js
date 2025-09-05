@@ -89,9 +89,15 @@ for(let index in digits){
 }
 
 
-//FOR -OF LOOP : an easier way to iterate over array
-/*let digits = [1,2,3,4,5,6,7];
-for(const digit of digits){
+//FOR -OF LOOP : an easier way to iterate over an array,maps,string, or sets
+//for arrays
+let ArrayOfDigits = [1,2,3,4,5,6,7];
+for(const digit of ArrayOfDigits){
   console.log(digit);
-}*/
+}
+//for strings
+let string ='isaac'
+for (let char of string){
+  console.log(char);
+}
 

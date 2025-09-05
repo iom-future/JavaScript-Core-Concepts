@@ -68,21 +68,28 @@ let idx = 0;
 // }while (idx < 4);
 
 //FOR - IN LOOP
-//used to iterate over object
+//used to iterate over object and get keys
 const profile = {
-  name: 'isaac moses',
-  class: 'O level graduate',
-  age: 16,
-  favouriteFood: 'fried yam',
-  isRich: true
-
+    name: 'isaac moses',
+    grade: 'O level graduate',
+    age: 16,
+    favouriteFood: 'fried yam',
+    isRich: true,
 };
-
+let info =[];
 for (const profileKeys in profile) {
-  console.log(profile[profileKeys]);
+  console.log(`${profileKeys}: ${profile[profileKeys]}`);
+  info.push(profile[profileKeys]);
+}
+let [name,grade,...other]=info;
+//since array is an object you can use FOR IN LOOP to get the index(keys)
+let digits = [1,2,3,4,5,6,7];
+for(let index in digits){
+  console.log(index);
 }
 
-//FOR -OF LOOP : an easier way to iterate over an array
+
+//FOR -OF LOOP : an easier way to iterate over array
 /*let digits = [1,2,3,4,5,6,7];
 for(const digit of digits){
   console.log(digit);

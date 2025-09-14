@@ -20,7 +20,7 @@ const welcomeMessage = function (name) {
 };
 
 
-
+welcomeMessage('isaac');
 //THE DIFF BTW FUNC DECL AND FUNC EXPRESS is
 //you can call a function before declaring it but
 //cants call a function before expressing it

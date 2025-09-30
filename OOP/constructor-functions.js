@@ -65,3 +65,33 @@ function Cars(make, model, year, color) {
 let car1 = new Cars('toyota','camry',2027,'black');
 console.log(car1.start());
 console.log(car1.stop());
+
+
+//BUILT IN CONSTRUCTOR i.e., NATIVE CONSTRUCTORS
+//you [can but] don't have to create an instance [using new key word] before using them
+
+//Number Constructor
+//used for converting string to num
+let stringToNum = Number('15');
+console.log(typeof stringToNum);
+//used for creating numbers
+let num1= new Number(10); //=== num1 = 10;
+console.log(num1);
+
+//String Constructor
+let numToString = String(77);
+console.log(typeof numToString);
+
+//Array Constructor
+let arr = new Array(1,2,3);
+console.log(arr);
+
+//Map
+let newMap = new Map;
+newMap.set('age',17);
+console.log(newMap);
+
+//Set
+let newSet = new Set;
+newSet.add('happy');
+console.log(newSet);

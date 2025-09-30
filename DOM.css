@@ -1,0 +1,30 @@
+.clicked-turn-red{
+    color: red;
+}
+.color-for-CM{
+    color: blue;
+}
+.double-click{
+    color: green;
+}
+.mouse-down-color{
+  color: yellow;
+}
+.mouse-enter-color{
+    color: pink;
+}
+.mouse-leave-color{
+    color: indigo;
+}
+.mouse-move-color{
+    color: orange;
+}
+.mouse-out-color{
+    color: teal;
+}
+.mouse-over-color{
+    color: #938b2e;
+}
+.mouse-up-color{
+    color: sandybrown;
+}

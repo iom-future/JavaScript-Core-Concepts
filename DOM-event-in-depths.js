@@ -1,0 +1,21 @@
+let one = document.querySelector('.click');
+let two = document.querySelector('.context-menu');
+let three = document.querySelector('.db-click');
+let four = document.querySelector('.mouse-down');
+let five = document.querySelector('.mouse-enter');
+let six = document.querySelector('.mouse-leave');
+let seven = document.querySelector('.mouse-move');
+let eight = document.querySelector('.mouse-out');
+let nine = document.querySelector('.move-over');
+let ten = document.querySelector('.mouse-up');
+
+one.addEventListener('click',()=>one.classList.toggle('clicked-turn-red'));
+two.addEventListener('contextmenu',()=>two.classList.toggle('color-for-CM'));
+three.addEventListener('dblclick',()=>three.classList.toggle('double-click'));
+four.addEventListener('mousedown',()=>four.classList.toggle('mouse-down-color')); //similar to click
+five.addEventListener('mouseenter',()=>five.classList.toggle('mouse-enter-color')); //similar to hover
+six.addEventListener('mouseleave',()=>six.classList.toggle('mouse-leave-color'));
+seven.addEventListener('mousemove',()=>seven.classList.toggle('mouse-move-color'));
+eight.addEventListener('mouseout',()=>eight.classList.toggle('mouse-out-color'));
+nine.addEventListener('mouseover',()=>nine.classList.toggle('mouse-over-color'));
+ten.addEventListener('mouseup',()=>ten.classList.toggle('mouse-up-color'));

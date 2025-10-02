@@ -66,7 +66,18 @@ let car1 = new Cars('toyota','camry',2027,'black');
 console.log(car1.start());
 console.log(car1.stop());
 
+let obj ={
 
+}
+console.log(`this is the constructor prototype:`);
+console.log(car1.__proto__);
+console.log(`this is the constructor [not prototype]:`);
+console.log(car1);
+
+console.log(`this is the a normal object prototype:`);
+console.log(obj.__proto__);
+console.log(`this is the a normal object [not prototype]:`);
+console.log(obj);
 //BUILT IN CONSTRUCTOR i.e., NATIVE CONSTRUCTORS
 //you [can but] don't have to create an instance [using new key word] before using them
 

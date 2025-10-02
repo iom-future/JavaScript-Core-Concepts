@@ -1,6 +1,6 @@
 //the object.create() method creates a new object using an existing object as the prototype[first design] of the newly created object
 //.........using an existing object as the prototype[first design]  of the newly created object........... ; this just mean the newly createdobj inherits the property of the existinh obj
-
+//the Object constructor used to carry out Object-related actions on "typeof = object"
 let person ={
     greet: function() {
         console.log(this.name,this.age);

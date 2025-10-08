@@ -19,10 +19,14 @@ function Dog(name,breed){
   Animal.call(this, name); //call the property name from the constructor, for duplication
   this.breed = breed
 }
+
+//INHERITING A PROTOTYPE ; THE SOUND PROTOTYPE
+// This must be done BEFORE creating instances of Dog
+Dog.prototype=Object.create(Animal.prototype); //Access The Dog Prototype and put a value there..... the value to be inherited
+
+// Now create the instance after setting up the prototype
 let dog1 = new Dog('bruno','shihauhau');
 console.log(dog1);
-//INHERITING A PROTOTYPE ; THE SOUND PROTOTYPE
-Dog.prototype=Object.create(Animal.prototype); //Acc ess The Dog Prototype and pu a value there..... the value to be inherited
 
 
 console.log(Animal);

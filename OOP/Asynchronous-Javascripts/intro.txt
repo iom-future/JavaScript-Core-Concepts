@@ -1,0 +1,19 @@
+//Asynchronous JS is just an umbrella term that handles async codes and mechanism for handling them
+
+//Async codes
+/* this are code blocks that runs independtently of other code blocks in the call stack for various reason like:
+1) it slows tan others execution because, it takes to much time to executes .
+*/
+//Causes of Async codes
+/* async codes are cause by timers , fetching data -- from data base, web API, Node API etc
+so its not the mechanism that makes it responsive but the process
+*/
+
+//Mechanism for handling Async codes
+/* the mechanism for handling async codes deals with the various ways async function are treated after excution/completion
+Mechanism for handling async codes mostly handles : Executing another task after an async function and how it affect the call stack,
+through:
+1) Call Back: What happens after the async Operation
+2)  Promise: The various states after the async Operation(pending,resolved,rejected)
+3)  Async/Await: This handles the various promises ; promises handles the state, async/Await handles them
+*/
